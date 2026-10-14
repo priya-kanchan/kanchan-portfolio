@@ -1476,4 +1476,4 @@ h1,h2,h3,h4 { font-weight:600; letter-spacing:-.025em; line-height:1.3; }
 .code-card { top:200px; }
 @media(max-width:900px) { .code-card { top:180px; } }
 @media(max-width:600px) { .code-card { top:200px; } }
-.hero__tech img.tech-icon { background:none; mask:none; -webkit-mask:none; object-fit:contain; filter:grayscale(1) brightness(0) invert(1); }
+.hero__tech img.tech-icon { background:none; mask:none; -webkit-mask:none; object-fit:contain; filter:none; }

@@ -34,18 +34,8 @@ $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
 }));
 $('#toTop').addEventListener('click', () => scrollToTarget(0));
 
-/* ---------- Loader ---------- */
-(function loader() {
-  const countEl = $('#loaderCount');
-  const finish = () => {
-    $('#loader').classList.add('done');
-    document.body.classList.remove('loading');
-    lenis && lenis.start();
-    document.body.classList.add('ready');
-  };
-  countEl.textContent = 100;
-  finish();
-})();
+lenis && lenis.start();
+document.body.classList.add('ready');
 
 /* ---------- Mobile menu ---------- */
 const nav = $('#nav');
