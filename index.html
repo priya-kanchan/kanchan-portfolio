@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanchan Priya | Frontend Developer</title>
+  <meta name="description" content="Kanchan Priya: Frontend Developer with 4+ years of experience building responsive, high-performance web apps using React.js, JavaScript, HTML5, CSS3 and Bootstrap. Based in Noida, India.">
+  <meta name="author" content="Kanchan Priya">
+  <meta property="og:title" content="Kanchan Priya | Frontend Developer">
+  <meta property="og:description" content="React.js and Frontend Developer with 4+ years of experience. Let's build something great together.">
+  <meta property="og:image" content="img/kanchan4-web.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050b18">
+  <link rel="icon" href="img/monogram.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading luxury">
+
+  <!-- Preloader -->
+  <div class="loader" id="loader">
+    <div class="loader__top">
+      <span>Kanchan Priya</span>
+      <span>Portfolio ©<span class="js-year"></span></span>
+    </div>
+    <div class="loader__count"><span id="loaderCount">0</span><i>%</i></div>
+  </div>
+
+  <!-- Custom cursor (desktop) -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo" aria-label="Kanchan Priya home"><span class="nav__monogram" aria-hidden="true">&lt;/&gt;</span><span>Kanchan<span class="brand-accent">.dev</span></span></a>
+    <nav class="nav__pill" id="navMenu" aria-label="Main navigation">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#work" class="nav__link">Work</a>
+      
+      <a href="#contact" class="nav__link">Contact</a>
+      <a href="Kanchan-Resume.pdf" download="Kanchan-Priya-Resume" class="nav__link nav__link--resume">Download Resume <i class="fa-solid fa-arrow-down"></i></a>
+    </nav>
+    <div class="nav__right">
+      <a href="#contact" class="btn btn--ink btn--sm nav__resume">
+        <span>Hire Me</span> <i class="fa-solid fa-arrow-right ne"></i>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="hero__meta fade" data-delay="0">
+          <span class="status"><i></i> Available for work</span>
+          <span class="hero__loc"><i class="fa-solid fa-location-arrow"></i> Based in Noida, India</span>
+        </div>
+
+        <div class="hero__layout">
+        <div class="hero__copy">
+        <p class="hero__eyebrow">I&#39;m a frontend developer</p>
+        <h1 class="hero__name">Hi, I&#39;m <span>Kanchan.</span></h1>
+        <p class="hero__statement">I build things for the web.</p>
+        <p class="hero__description">I create responsive websites and React applications that bring thoughtful design and clean code together.</p>
+        <a href="#work" class="btn btn--ink hero__primary"><span>View My Work</span> <i class="fa-solid fa-arrow-right ne"></i></a>
+        <a href="Kanchan-Resume.pdf" download class="btn btn--line hero__contact">Download CV <i class="fa-solid fa-download"></i></a>
+        <div class="hero__tech"><span class="label">Technologies I work with</span><div><img class="tech-icon" src="img/html.svg" alt="HTML5" width="27" height="29"><img class="tech-icon" src="img/css.svg" alt="CSS3" width="27" height="29"><img class="tech-icon" src="img/js.svg" alt="JavaScript" width="27" height="29"><img class="tech-icon" src="img/react.svg" alt="React" width="27" height="29"><img class="tech-icon" src="img/bootstrap-4.svg" alt="Bootstrap" width="27" height="29"><img class="tech-icon" src="img/figma.svg" alt="Figma" width="27" height="29"></div></div>
+        </div>
+        <figure class="hero__portrait">
+          <img src="img/kanchan4-web.jpg" alt="Kanchan Priya at work" width="720" height="1280">
+          <figcaption><span>Kanchan Priya</span><span>Developer / Noida, IN</span></figcaption>
+          <div class="code-card"><div class="code-card__head"><span>&lt;/&gt; Code</span><span class="code-dot"></span></div><pre><span>const</span> developer = {
+  name: <span>"Kanchan"</span>,
+  skills: [<span>"React"</span>,
+    <span>"JavaScript"</span>, <span>"CSS"</span>],
+  passion: <span>"Building things
+    for the web"</span>
+};</pre></div>
+        </figure>
+        </div>
+
+        <div class="hero__bottom">
+          <div class="hero__role fade" data-delay="1">
+            <span class="label">Currently</span>
+            <p class="hero__typed"><span class="typed" id="typed">Frontend Developer</span><span class="caret"></span></p>
+            <p class="muted">@ GTF Technologies</p>
+          </div>
+
+          <p class="hero__intro fade" data-delay="2">
+            I build <em class="serif">responsive</em>, pixel-perfect and fast web experiences with
+            React.js, JavaScript, HTML5 &amp; CSS3, with <b>4+ years</b> of turning designs into
+            products people love to use.
+          </p>
+
+          <a href="#about" class="hero__scroll"><span>Discover more</span><i class="fa-solid fa-arrow-down"></i></a>
+
+          <a href="#about" class="badge-rotate fade" data-delay="4" aria-label="Scroll to About">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <defs><path id="circlePath" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+              <text><textPath href="#circlePath">Frontend Developer • Open to work • </textPath></text>
+            </svg>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>React.js</span><b>✺</b><span>JavaScript</span><b>✺</b><span>HTML5</span><b>✺</b><span>CSS3</span><b>✺</b><span>Bootstrap</span><b>✺</b><span>API Integration</span><b>✺</b><span>Figma</span><b>✺</b><span>Responsive UI</span><b>✺</b>
+        <span>React.js</span><b>✺</b><span>JavaScript</span><b>✺</b><span>HTML5</span><b>✺</b><span>CSS3</span><b>✺</b><span>Bootstrap</span><b>✺</b><span>API Integration</span><b>✺</b><span>Figma</span><b>✺</b><span>Responsive UI</span><b>✺</b>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT (bento) ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">About me</span>
+          <h2 class="sec-title split">I&#39;m passionate about<br>creating digital solutions</h2>
+        </div>
+
+        <div class="bento">
+          <div class="tile tile--photo up">
+            <img src="img/kanchan8-web.jpg" alt="Portrait of Kanchan Priya" loading="lazy">
+            <span class="tile__tag">A little about me</span>
+          </div>
+
+          <div class="tile tile--intro up">
+            <p class="lead">
+              I'm a frontend developer with a <b>B.Tech in Computer Science</b> who loves solving
+              problems and turning ideas into <em class="serif">clean, usable</em> interfaces.
+            </p>
+            <p class="muted">
+              My journey: <b>1 yr 2 mo at Infolane Technologies</b>, <b>8 months at Redian Software</b>,
+              and since March 2024 I've been at <b>GTF Technologies</b>, building dashboards, landing pages
+              and production websites with React.js, JavaScript, Bootstrap and real API integrations.
+            </p>
+          </div>
+
+          <div class="tile tile--stat tile--accent up">
+            <strong><span class="count" data-to="4">4</span>+</strong>
+            <span>Years of experience</span>
+          </div>
+          <div class="tile tile--stat up">
+            <strong><span class="count" data-to="15">15</span>+</strong>
+            <span>Projects shipped</span>
+          </div>
+          <div class="tile tile--stat tile--ink up">
+            <strong><span class="count" data-to="3">3</span></strong>
+            <span>Companies</span>
+          </div>
+
+          <div class="tile tile--info up">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span class="label">Education</span>
+            <p><b>B.Tech (CSE)</b>, 2018–2022<br>Dr. A.P.J. Abdul Kalam WIT, Darbhanga</p>
+          </div>
+          <div class="tile tile--info up">
+            <i class="fa-solid fa-language"></i>
+            <span class="label">Languages</span>
+            <p><b>English</b> &amp; <b>Hindi</b></p>
+          </div>
+          <a class="tile tile--link up" href="https://github.com/Kanchan-priya" target="_blank" rel="noopener" data-cursor="Open">
+            <span class="label">See my code</span>
+            <span class="tile__big"><i class="fa-brands fa-github"></i> GitHub</span>
+            <i class="fa-solid fa-arrow-right ne tile__arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">My skills</span>
+          <h2 class="sec-title split">Technologies I Master</h2>
+          <p class="sec-sub up">The stack I use every day to design, build and ship modern web experiences.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill up"><i class="fa-brands fa-react"></i><h4>React.js</h4><span>Components, Hooks, Routing</span></div>
+          <div class="skill up"><i class="fa-brands fa-js"></i><h4>JavaScript</h4><span>ES6+, DOM, Async</span></div>
+          <div class="skill up"><i class="fa-brands fa-html5"></i><h4>HTML5</h4><span>Semantic, Accessible</span></div>
+          <div class="skill up"><i class="fa-brands fa-css3-alt"></i><h4>CSS3</h4><span>Flexbox, Grid, Animation</span></div>
+          <div class="skill up"><i class="fa-brands fa-bootstrap"></i><h4>Bootstrap 5</h4><span>Responsive layouts</span></div>
+          <div class="skill up"><i class="fa-solid fa-plug"></i><h4>API Integration</h4><span>REST, JSON, Fetch / Axios</span></div>
+          <div class="skill up"><i class="fa-brands fa-figma"></i><h4>Figma</h4><span>UI design, Handoff</span></div>
+          <div class="skill up"><i class="fa-brands fa-git-alt"></i><h4>Git &amp; GitHub</h4><span>Version control</span></div>
+        </div>
+
+        <div class="also up">
+          <span class="label">Also comfortable with</span>
+          <div class="tags">
+            <span>Material UI</span><span>Firebase</span><span>WordPress</span><span>PSD / Figma to HTML</span>
+            <span>Canva</span><span>FTP &amp; Hosting</span><span>Cross-browser testing</span><span>Performance optimization</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE (accordion) ============ -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">My journey</span>
+          <h2 class="sec-title split">Where I've <em class="serif">worked</em></h2>
+        </div>
+
+        <div class="jobs" id="jobs">
+          <article class="job open up">
+            <button class="job__head" aria-expanded="true">
+              <span class="job__year">2024 — Now</span>
+              <span class="job__role">Frontend Developer <small>GTF Technologies</small></span>
+              <span class="job__now">Current</span>
+              <span class="job__plus" aria-hidden="true"></span>
+            </button>
+            <div class="job__body">
+              <div class="job__inner">
+                <div class="job__logo"><img src="img/gtf-logo-crop.png" alt="GTF Technologies" loading="lazy"></div>
+                <div>
+                  <p>Managing and maintaining multiple websites, creating new pages and designing responsive, mobile-friendly components for the real estate sector. <span class="muted">(Mar 2024 – Present)</span></p>
+                  <ul>
+                    <li>Designed and developed admin dashboards end to end</li>
+                    <li>Built high-converting landing pages for real estate clients</li>
+                    <li>Integrated REST APIs and wrote maintainable frontend code</li>
+                    <li>Refactored legacy apps and pages into modern, faster versions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="job up">
+            <button class="job__head" aria-expanded="false">
+              <span class="job__year">2023 — 2024</span>
+              <span class="job__role">Frontend Developer <small>Redian Software, Noida</small></span>
+              <span class="job__now"></span>
+              <span class="job__plus" aria-hidden="true"></span>
+            </button>
+            <div class="job__body">
+              <div class="job__inner">
+                <div class="job__logo"><img src="img/redian.png" alt="Redian Software" loading="lazy"></div>
+                <div>
+                  <p>Built and enhanced multiple web apps based on feedback, with a focus on UI/UX, responsiveness and API integration. <span class="muted">(Jul 2023 – Mar 2024)</span></p>
+                  <ul>
+                    <li>Designed &amp; developed dashboards (Drive Hub user &amp; admin panel)</li>
+                    <li>Worked on a FinTech product UI</li>
+                    <li>Cross-device and cross-browser optimized components</li>
+                  </ul>
+                  <div class="job__links">
+                    <a href="https://fintech.rediansoftware.com/" target="_blank" rel="noopener" class="ulink">Redian FinTech <i class="fa-solid fa-arrow-right ne"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="job up">
+            <button class="job__head" aria-expanded="false">
+              <span class="job__year">2022 — 2023</span>
+              <span class="job__role">Frontend Developer <small>Infolane Technologies Pvt. Ltd.</small></span>
+              <span class="job__now"></span>
+              <span class="job__plus" aria-hidden="true"></span>
+            </button>
+            <div class="job__body">
+              <div class="job__inner">
+                <div class="job__logo job__logo--dark"><img src="img/infolane.png" alt="Infolane Technologies" loading="lazy"></div>
+                <div>
+                  <p>Landing page developer for the IT Services department, creating and optimizing pages for client businesses. <span class="muted">(May 2022 – Jul 2023)</span></p>
+                  <ul>
+                    <li>Created visually appealing, user-friendly UI/UX</li>
+                    <li>Optimized code and assets for performance</li>
+                    <li>Cross-browser &amp; device compatibility testing</li>
+                    <li>Git version control, hosting and ongoing bug fixes</li>
+                  </ul>
+                  <div class="job__links">
+                    <a href="https://birdskyaviation.com/" target="_blank" rel="noopener" class="ulink">Bird Sky Aviation <i class="fa-solid fa-arrow-right ne"></i></a>
+                    <a href="https://thegrids.co.in/" target="_blank" rel="noopener" class="ulink">The Grids <i class="fa-solid fa-arrow-right ne"></i></a>
+                    <a href="https://kanahiyaoverseas.com/" target="_blank" rel="noopener" class="ulink">Kanahiya Overseas <i class="fa-solid fa-arrow-right ne"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="job up">
+            <button class="job__head" aria-expanded="false">
+              <span class="job__year">2021</span>
+              <span class="job__role">Web Development Training <small>Internshala Trainings</small></span>
+              <span class="job__now"></span>
+              <span class="job__plus" aria-hidden="true"></span>
+            </button>
+            <div class="job__body">
+              <div class="job__inner">
+                <div class="job__logo job__logo--icon"><i class="fa-solid fa-award"></i></div>
+                <div>
+                  <p>Completed a six-week certified online training covering HTML &amp; CSS, Bootstrap, SQL and PHP. <span class="muted">(May – Jun 2021)</span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">Featured projects</span>
+          <h2 class="sec-title split">Some of My Recent Work</h2>
+          <p class="sec-sub up">Personal React projects, plus live client websites I've shipped professionally.</p>
+        </div>
+
+        <div class="works">
+          <a class="work up" href="https://clinic-management-app.netlify.app/" target="_blank" rel="noopener" data-cursor="View">
+            <div class="work__img"><img src="img/cms.jpg" alt="Clinic Management System" loading="lazy"></div>
+            <div class="work__info">
+              <span class="work__no">01</span>
+              <div>
+                <h3>Clinic Management System</h3>
+                <p>Dashboard for storing and organizing clinic data, built to make day-to-day operations faster.</p>
+                <div class="tags tags--sm"><span>React</span><span>Firebase</span><span>MUI</span></div>
+              </div>
+              <i class="fa-solid fa-arrow-right ne work__arrow"></i>
+            </div>
+          </a>
+
+          <a class="work up" href="https://kanchanpriya.netlify.app/landing-page" target="_blank" rel="noopener" data-cursor="View">
+            <div class="work__img"><img src="img/landingpages.jpg" alt="Real estate landing pages" loading="lazy"></div>
+            <div class="work__info">
+              <span class="work__no">02</span>
+              <div>
+                <h3>Real Estate Landing Pages</h3>
+                <p>A set of high-converting property landing pages that combine strong visuals with clear calls to action.</p>
+                <div class="tags tags--sm"><span>React</span><span>JavaScript</span><span>CSS3</span></div>
+              </div>
+              <i class="fa-solid fa-arrow-right ne work__arrow"></i>
+            </div>
+          </a>
+
+          <a class="work up" href="https://react-dice-play.netlify.app/" target="_blank" rel="noopener" data-cursor="Play">
+            <div class="work__img"><img src="img/dices.png" alt="Dice Game" loading="lazy"></div>
+            <div class="work__info">
+              <span class="work__no">03</span>
+              <div>
+                <h3>Dice Game</h3>
+                <p>Interactive React game where players roll virtual dice and compete for the highest score.</p>
+                <div class="tags tags--sm"><span>React</span><span>JavaScript</span><span>State</span></div>
+              </div>
+              <i class="fa-solid fa-arrow-right ne work__arrow"></i>
+            </div>
+          </a>
+
+          <a class="work up" href="https://transcendent-valkyrie-0fe85e.netlify.app/" target="_blank" rel="noopener" data-cursor="Try">
+            <div class="work__img work__img--type">
+              <div class="typo">
+                <span>Aa</span>
+                <small>UPPER · lower · speak · count</small>
+              </div>
+            </div>
+            <div class="work__info">
+              <span class="work__no">04</span>
+              <div>
+                <h3>Text Utility App</h3>
+                <p>Converts text to upper/lower case and speech, with live word count, character count and reading time.</p>
+                <div class="tags tags--sm"><span>React</span><span>Bootstrap</span><span>Web Speech</span></div>
+              </div>
+              <i class="fa-solid fa-arrow-right ne work__arrow"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Client websites list -->
+        <div class="clients">
+          <h3 class="clients__title up">Client websites <span class="muted">· live in production</span></h3>
+          <a class="client up" href="https://birdskyaviation.com/" target="_blank" rel="noopener" data-cursor="Visit">
+            <span class="client__name">Bird Sky Aviation</span>
+            <span class="client__type">Aviation · Business site</span>
+            <span class="client__by">Infolane</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a class="client up" href="https://thegrids.co.in/" target="_blank" rel="noopener" data-cursor="Visit">
+            <span class="client__name">The Grids</span>
+            <span class="client__type">Company website</span>
+            <span class="client__by">Infolane</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a class="client up" href="https://kanahiyaoverseas.com/" target="_blank" rel="noopener" data-cursor="Visit">
+            <span class="client__name">Kanahiya Overseas</span>
+            <span class="client__type">Export business site</span>
+            <span class="client__by">Infolane</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a class="client up" href="https://fintech.rediansoftware.com/" target="_blank" rel="noopener" data-cursor="Visit">
+            <span class="client__name">Redian FinTech</span>
+            <span class="client__type">FinTech product UI</span>
+            <span class="client__by">Redian Software</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">What I offer</span>
+          <h2 class="sec-title split">What I <em class="serif">do</em></h2>
+        </div>
+        <div class="services">
+          <div class="service up"><span class="service__no">01</span><h3>Web Development</h3><p>Fast, scalable websites and apps with HTML, CSS, JavaScript and React.js.</p></div>
+          <div class="service up"><span class="service__no">02</span><h3>Responsive Design</h3><p>Pixel-perfect layouts that work beautifully on every screen and browser.</p></div>
+          <div class="service up"><span class="service__no">03</span><h3>Dashboards</h3><p>Clean admin dashboards with real API integrations and smart data views.</p></div>
+          <div class="service up"><span class="service__no">04</span><h3>Landing Pages</h3><p>High-converting pages for real estate, IT services and growing businesses.</p></div>
+          <div class="service up"><span class="service__no">05</span><h3>UI Design</h3><p>Turning ideas into interfaces in Figma, then into production-ready code.</p></div>
+          <div class="service up"><span class="service__no">06</span><h3>Problem Solving</h3><p>Finding issues, analyzing information and delivering reliable fixes.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact__head">
+          <span class="sec-num">Let&#39;s work together</span>
+          <h2 class="contact__title split">Have a project in mind?</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__side up">
+            <p class="contact__lead">Have a role, a project or an idea in mind? Tell me a little about it. The form opens WhatsApp with your message ready to send.</p>
+            <ul class="contact__list">
+              <li><span class="label">Phone / WhatsApp</span><a href="tel:+917257866897" class="ulink">+91 72578 66897</a></li>
+              <li><span class="label">Email</span><a href="mailto:kanchanpriya25june@gmail.com" class="ulink">kanchanpriya25june@gmail.com</a></li>
+              <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/kanchan-priya-a893881b4/" target="_blank" rel="noopener" class="ulink">kanchan-priya</a></li>
+              <li><span class="label">Location</span><span>Sector-66, Noida, UP</span></li>
+            </ul>
+          </div>
+
+          <form class="form up" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden"><label>Don't fill this: <input name="bot-field"></label></p>
+
+            <div class="form__row">
+              <div class="field">
+                <input type="text" id="fName" name="name" placeholder=" " required autocomplete="name">
+                <label for="fName">Your name *</label>
+              </div>
+              <div class="field">
+                <input type="email" id="fEmail" name="email" placeholder=" " required autocomplete="email">
+                <label for="fEmail">Email address *</label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <input type="tel" id="fPhone" name="phone" placeholder=" " autocomplete="tel">
+                <label for="fPhone">Phone (optional)</label>
+              </div>
+              <div class="field">
+                <input type="text" id="fCompany" name="company" placeholder=" " autocomplete="organization">
+                <label for="fCompany">Company (optional)</label>
+              </div>
+            </div>
+
+            <fieldset class="purpose" id="purpose">
+              <legend class="label">I'm reaching out about *</legend>
+              <div class="purpose__opts">
+                <label><input type="radio" name="purpose" value="Job Opportunity / Interview"><span>Job opportunity</span></label>
+                <label><input type="radio" name="purpose" value="Freelance Project"><span>Freelance project</span></label>
+                <label><input type="radio" name="purpose" value="Collaboration"><span>Collaboration</span></label>
+                <label><input type="radio" name="purpose" value="Just saying Hi"><span>Just saying hi</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <textarea id="fMessage" name="message" rows="4" placeholder=" " required></textarea>
+              <label for="fMessage">Your message *</label>
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--lg magnetic" id="submitBtn">
+              <span>Send via WhatsApp</span> <i class="fa-brands fa-whatsapp"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="wrap">
+          <div class="footer__big" aria-hidden="true">Kanchan Priya</div>
+          <div class="footer__row">
+            <span>© <span class="js-year"></span> Kanchan Priya. Designed &amp; built by me.</span>
+            <div class="footer__social">
+              <a href="https://github.com/Kanchan-priya" target="_blank" rel="noopener" class="ulink">GitHub</a>
+              <a href="https://www.linkedin.com/in/kanchan-priya-a893881b4/" target="_blank" rel="noopener" class="ulink">LinkedIn</a>
+              <a href="https://wa.me/917257866897" target="_blank" rel="noopener" class="ulink">WhatsApp</a>
+              <a href="mailto:kanchanpriya25june@gmail.com" class="ulink">Email</a>
+            </div>
+            <button class="ulink totop" id="toTop">Back to top <i class="fa-solid fa-arrow-up"></i></button>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <a href="https://wa.me/917257866897?text=Hi%20Kanchan%2C%20I%20saw%20your%20portfolio!" class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastMsg"></span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

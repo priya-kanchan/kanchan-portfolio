@@ -1,0 +1,11 @@
+.vscode/
+.preview-profile/
+.qa-profile/
+.design-profile/
+preview-*.png
+reference-site.html
+reference-style.css
+node_modules/
+.env
+.env.*
+!.env.example
